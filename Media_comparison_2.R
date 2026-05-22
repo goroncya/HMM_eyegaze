@@ -1,4 +1,5 @@
-# Agnieszka Goroncy
+# Agnieszka Goroncy, 2026
+
 # II. ANALYSIS: What does the gaze pattern in the HMM look like?
 # How much does the medium change the gaze pattern of the same person relative to the healthy face?
 
