@@ -1,4 +1,4 @@
-# Agnieszka Goroncy
+# Agnieszka Goroncy, 2026
 library(dplyr)
 library(depmixS4)	
 str(df)	# data 
