@@ -17,6 +17,10 @@ The R code used to fit the Participant x Media HMMs, perform feature extraction,
    c.	transition_distance()
    d.	get_clean_row()
 4. Media_comparison_3.R
+  a.	extract_states_from_row()
+  b.	all_perms()
+  c.	optimal_state_match()
+  d.	compute_transition_delta_matched()
 5. Media_comparison_4.R
 
 Input data structure
