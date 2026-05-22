@@ -218,9 +218,9 @@ top_center_shifts <- center_shift_summary %>% arrange(desc(mean_shift)) %>%
 
 # Biggest changes in state share
 top_occ_shifts <- occ_shift_summary %>% mutate(abs_delta=abs(mean_delta_occ)) %>%
-  arrange(desc(abs_delta)) %>% select(MediaID, ref_state, type, n, mean_occ_clean, mean_occ_media, mean_delta_occ)
+  arrange(desc(abs_delta)) %>% dplyr::select(MediaID, ref_state, type, n, mean_occ_clean, mean_occ_media, mean_delta_occ)
 
 # Biggest state transition changes
 top_transitions <- transition_shift_summary %>% mutate(abs_delta=abs(mean_delta_trans)) %>%
-  arrange(desc(abs_delta)) %>% select(MediaID, clean_from, clean_to,
+  arrange(desc(abs_delta)) %>% dplyr::select(MediaID, clean_from, clean_to,
          mean_trans_clean, mean_trans_media, mean_delta_trans)
