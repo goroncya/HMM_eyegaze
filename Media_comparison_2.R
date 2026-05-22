@@ -91,7 +91,7 @@ transition_distance <- function(row1, row2, trans_cols) {
 # calculating the distance of each medium from media=1
 # base models - MediaID=1
 clean_models <- hmm_features %>% filter(MediaID==1) %>%
-  select(ParticipantID, all_of(center_cols), all_of(trans_cols), starts_with("Occ_State")) %>%
+  dplyr::select(ParticipantID, all_of(center_cols), all_of(trans_cols), starts_with("Occ_State")) %>%
   rename_with(~ paste0(.x, "_clean"), -ParticipantID)
 hmm_compare <- hmm_features %>% left_join(clean_models, by="ParticipantID")
 # auxiliary function: extracts a "clean row" for one record
