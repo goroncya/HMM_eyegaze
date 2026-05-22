@@ -20,7 +20,7 @@ max_states <- 5
 state_occ <- df_pelna %>% group_by(ParticipantID, MediaID, state) %>%
   summarise(n=n(), .groups="drop") %>% group_by(ParticipantID, MediaID) %>%
   mutate(prop=n/sum(n)) %>% ungroup() %>%
-  select(ParticipantID, MediaID, state, prop) %>%
+  dplyr::select(ParticipantID, MediaID, state, prop) %>%
   tidyr::pivot_wider(names_from=state, values_from=prop, names_prefix="Occ_State",values_fill=0)
 
 # make sure all columns 1 to 5 exist
