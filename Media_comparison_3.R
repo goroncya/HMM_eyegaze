@@ -115,7 +115,7 @@ optimal_state_match <- function(clean_states, media_states, occ_threshold=0.05,
 # Matching states for each participant and media pair
 # Healthy (clean) reference for each person
 clean_ref <- hmm_features %>% filter(MediaID==1) %>%
-  select(ParticipantID, all_of(center_cols), starts_with("Occ_State")) %>%
+  dplyr::select(ParticipantID, all_of(center_cols), starts_with("Occ_State")) %>%
   rename_with(~paste0(.x, "_clean"), -ParticipantID)
 
 # Matching medium and healthy (clean) face of the same person
