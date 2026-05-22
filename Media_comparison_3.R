@@ -162,7 +162,7 @@ occ_shift_summary <- occ_shift_df %>% group_by(MediaID, ref_state, type) %>%
 # state transitions after matching
 # Function: transition delta after matching states
 compute_transition_delta_matched <- function(row_df, match_sub, max_states=5) {  
-  matched <- match_sub %>% filter(type=="matched") %>% select(clean_state, media_state)  
+  matched <- match_sub %>% filter(type=="matched") %>% dplyr::select(clean_state, media_state)  
   if (nrow(matched)<2) return(NULL)
   out <- list()
   for (i in seq_len(nrow(matched))) {
@@ -185,7 +185,7 @@ compute_transition_delta_matched <- function(row_df, match_sub, max_states=5) {
 
 # Append the clean transition matrix to paired_hmm
 clean_ref_trans <- hmm_features %>% filter(MediaID==1) %>%
-  select(ParticipantID, all_of(trans_cols)) %>%
+  dplyr::select(ParticipantID, all_of(trans_cols)) %>%
   rename_with(~ paste0(.x, "_clean"), -ParticipantID)
 
 paired_hmm_trans <- hmm_features %>% filter(MediaID!=1) %>%
