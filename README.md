@@ -15,5 +15,14 @@ The R code used to fit the Participant x Media HMMs, perform feature extraction,
 4. Media_comparison_3.R
 5. Media_comparison_4.R
 
+Input data structure
+The analysis is based on a data frame named 'df', where each row corresponds to a single gaze observation (fixation). The data frame contains the following columns:
+- 'ParticipantID' - unique identifier of the participant,
+- 'MediaID' - identifier of the viewed stimulus/image,
+- 'ModelID' - identifier of the person/model presented within a given media item. In the HMM analysis, each 'ModelID' is treated as a separate observation sequence within a given participant–media pair,
+- 'TrialID' - order of the observation within the sequence,
+- 'OX' - horizontal gaze coordinate,
+- 'OY' - vertical gaze coordinate.
+  
 References: Marek Jankowski, Krzysztof Jasiński, Agnieszka Goroncy, Impact of skin abberations on facial exploration behavior: an HMM study, under review, 2026.
 
