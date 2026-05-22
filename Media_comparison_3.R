@@ -214,7 +214,7 @@ transition_shift_summary <- transition_delta_df %>%
 
 # biggest shift in centers
 top_center_shifts <- center_shift_summary %>% arrange(desc(mean_shift)) %>%
-  select(MediaID, clean_state, n, mean_dx, mean_dy, mean_shift)
+  dplyr::select(MediaID, clean_state, n, mean_dx, mean_dy, mean_shift)
 
 # Biggest changes in state share
 top_occ_shifts <- occ_shift_summary %>% mutate(abs_delta=abs(mean_delta_occ)) %>%
