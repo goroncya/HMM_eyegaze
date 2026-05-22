@@ -12,6 +12,10 @@ The R code used to fit the Participant x Media HMMs, perform feature extraction,
   g.	calc_state_pair_metrics()
 2. Media_comparison_1.R
 3. Media_comparison_2.R
+   a.	occ_distance()
+   b.	center_distance_weighted()
+   c.	transition_distance()
+   d.	get_clean_row()
 4. Media_comparison_3.R
 5. Media_comparison_4.R
 
