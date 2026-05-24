@@ -22,6 +22,11 @@ The R code used to fit the Participant x Media HMMs, perform feature extraction,
   c.	optimal_state_match()
   d.	compute_transition_delta_matched()
 5. Media_comparison_4.R
+6. PAM_participant_clustering.R
+   a. pairwise_hmm_distance_components()
+   b. build_medium_distance_matrix()
+   c. cluster_medium_patterns()
+   d. get_cluster_medoids()
 
 Input data structure
 The analysis is based on a data frame named 'df', where each row corresponds to a single gaze observation (fixation). The data frame contains the following columns:
