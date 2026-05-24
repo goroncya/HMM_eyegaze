@@ -11,18 +11,18 @@ The R code used to fit the Participant x Media HMMs, perform feature extraction,
   f.	get_state_info()
   g.	calc_state_pair_metrics()
 2. Media_comparison_1.R
-3. Media_comparison_2.R
+3. Media_comparison_2.R, defining functions:
    a.	occ_distance()
    b.	center_distance_weighted()
    c.	transition_distance()
    d.	get_clean_row()
-4. Media_comparison_3.R
+4. Media_comparison_3.R, defining functions:
   a.	extract_states_from_row()
   b.	all_perms()
   c.	optimal_state_match()
   d.	compute_transition_delta_matched()
 5. Media_comparison_4.R
-6. PAM_participant_clustering.R
+6. PAM_participant_clustering.R, defining functions:
    a. pairwise_hmm_distance_components()
    b. build_medium_distance_matrix()
    c. cluster_medium_patterns()
