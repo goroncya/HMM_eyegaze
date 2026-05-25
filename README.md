@@ -27,6 +27,8 @@ The R code used to fit the Participant x Media HMMs, perform feature extraction,
    b. build_medium_distance_matrix()
    c. cluster_medium_patterns()
    d. get_cluster_medoids()
+7. Hierarchical_clustering.R, defining functions:
+   a. cluster_medium_hierarchical().
 
 Input data structure
 The analysis is based on a data frame named 'df', where each row corresponds to a single gaze observation (fixation). The data frame contains the following columns:
