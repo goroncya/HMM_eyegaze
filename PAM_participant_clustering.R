@@ -88,7 +88,7 @@ build_medium_distance_matrix <- function(hmm_features, media_id, occ_threshold=0
 }
 
 # Clustering media
-# PAM, choice of k using silhouette
+# Partitioning Around Medoids (PAM), choice of k using silhouette
 cluster_medium_patterns <- function(dist_obj,max_k_clusters=4, sil_threshold=0.25, min_cluster_size=8) {
   D <- dist_obj$D
   n <- nrow(D)
