@@ -1,0 +1,37 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: HMM_eyegaze
+message: >-
+  If you use this software, please cite it using the  
+  metadata from this file.
+type: software
+authors:
+  - given-names: Agnieszka
+    family-names: Goroncy
+    email: gemini@mat.umk.pl
+    affiliation: Nicolaus Copernicus University
+    orcid: 'https://orcid.org/0000-0002-3288-1530'
+repository-code: 'https://github.com/goroncya/HMM_eyegaze/'
+url: 'https://github.com/goroncya/HMM_eyegaze/'
+abstract: >-
+  HMM study on the impact of skin abberations on facial
+  exploration behavior
+
+
+  The R code used to fit the Participant x Media HMMs,
+  perform feature extraction, implement state matching, and
+  conduct the clustering analyses (PAM, hierarchical:
+  average and complete linkage). 
+keywords:
+  - eye-tracking
+  - eye-gaze
+  - Hidden Markov Models
+  - HMM
+  - clustering
+  - hierarchical clustering
+  - PAM clustering
+license: CC-BY-NC-4.0
+version: 1.0.0
+date-released: '2026-05-27'
