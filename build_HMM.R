@@ -2,6 +2,8 @@
 library(dplyr)
 library(depmixS4)	
 str(df)	# data 
+#set.seed(15032026) 
+
 
 ## Model settings
 max_states <- 5	# max number of states (ROIs)
