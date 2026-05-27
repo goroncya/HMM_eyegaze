@@ -1,7 +1,7 @@
 # HMM_eyegaze
 HMM study on the impact of skin abberations on facial exploration behavior
 
-The R code used to fit the Participant x Media HMMs, perform feature extraction, implement state matching, and conduct the clustering analyses consists of the following R scripts:
+The R code used to fit the Participant x Media HMMs, perform feature extraction, implement state matching, and conduct the clustering analyses consists of the following sequence of R scripts:
 1.	build_HMM.R, defining functions:
   a.  build_hmm_multiseq()
   b.	get_state_table()
