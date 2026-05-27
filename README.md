@@ -38,6 +38,8 @@ The analysis is based on a data frame named 'df', where each row corresponds to 
 - 'TrialID' - order of the observation within the sequence,
 - 'OX' - horizontal gaze coordinate,
 - 'OY' - vertical gaze coordinate.
-  
+
+Note: the results reported in the refernce below were obtained for the random seed 15032006.
+
 References: Marek Jankowski, Krzysztof Jasiński, Agnieszka Goroncy, Impact of skin abberations on facial exploration behavior: an HMM study, under review, 2026.
 
